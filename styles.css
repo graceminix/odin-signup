@@ -9,47 +9,93 @@
 
 #left-side {
     display: flex;
+    height: inherit;
+    flex-direction: row-reverse;
     width: 40%;
     justify-content: center;
     overflow: hidden;
+    background-image: url(/home/grace/odin-signup/northern.jpg);
+    background-size: 2000px 2000px;
 }
 
-#left-side img {
-    width: 1000px;
+
+.logo {
+    font-family: 'Lobster Two';
+    height: 100px;
+    position: absolute;
+    top: 25%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+    background-color: rgba(224, 206, 206, 0.35);
+}
+
+.logo img {
+    max-width: 200px;
+    height: auto;
+    margin: -25px;
 }
 
 
 #right-side {
-    margin-left: 20px;
-    margin-right: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
     width: 60%;
+    height: inherit;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    background-color: #F5F5F5;
 }
 
 .text {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
+    font-size: 175%;
+}
+
+input:focus {
+    border: lightskyblue;
+    outline: 2px solid lightskyblue;
+    box-shadow:  5px 5px 5px grey;
+
 }
 
 #form {
-    display: flex;
     padding: 5px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    background-color: white;
 }
 
 td {
     text-align: center;
+    border-radius: 10px;
 }
 
 .page {
     display: flex;
-    height: calc(100vh - 200px);
-    width: 100%;
+    height: calc(100vh - 20px);
+    margin-left: 10%;
+    margin-right: 10%;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    background: #99b3e6; 
+    color: white;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+body {
+    background-color: black;
 }
