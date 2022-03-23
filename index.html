@@ -12,8 +12,9 @@
         <div id="left-side">
             <div class="logo">
                 <img src="logo.png">
-                Lights
-            </div>            
+                ODIN
+            </div>
+            <footer>Photo by <a href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie West</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>            </footer>
         </div>
         <div id="right-side">
             <div class="text"><p>
@@ -25,60 +26,68 @@
                     You <em>know</em> you want to.
                 </p>
             </div>
+            <!-- Form information -->
             <div id="form">
                 <table>
-                    <form autocomplete="off">
-                        <tr>
-                            <th>
-                                <caption><b>Let's do this!</b></caption><br>
-                            </th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="fname">First Name</label><br>
-                                <input type="text" id="fname" name="firstname"><br>
-                            </td>
-                            <td>
-                                
-                                <label for="lname">Last Name</label><br>
-                                <input type="text" id="lname" name="lastname"><br>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="email">Email Address</label><br>
-                                <input type="email" id="email" name="email"
-                                placeholder="example@example.com"><br>
-                            </td>
-                            <td>
-                                
-                                <label for="phone">Phone Number</label><br>
-                                <input type="tel" id="phone" name="phone"
-                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                                placeholder="123-456-7890"><br>
-                            </td>
-                        </tr>
-                        <tr>
+                    <form autocomplete="off" action="#">
+                        <div class="actual">
+                            <tr>
+                                <th>
+                                    <caption><b>Let's do this!</b></caption><br>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="fname">First Name</label><br>
+                                    <input type="text" id="fname" name="firstname" required><br>
+                                </td>
+                                <td>
                             
+                                    <label for="lname">Last Name</label><br>
+                                    <input type="text" id="lname" name="lastname" required><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="email">Email Address</label><br>
+                                    <input type="email" id="email" name="email"
+                                    placeholder="example@example.com" required><br>
+                                </td>
+                                <td>
+                            
+                                    <label for="phone">Phone Number</label><br>
+                                    <input type="tel" id="phone" name="phone"
+                                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                    placeholder="123-456-7890" required><br>
+                                </td>
+                            </tr>
+                            <tr>
+                            
+                                <td>
+                                    <label for="password">Password</label><br>
+                                    <input type="password" id="password" name="password" required>
+                                    <div class="error">
+                                        *Passwords do not match
+                                    </div>
+                                </td>
+                                <td>
+                                    <label for="password2">Confirm Password</label><br>
+                                    <input type="password" id="password2" name="password2" required>
+                                </td>
+                            </tr>
+                        </div>
+                        <tr>
                             <td>
-                                <label for="password">Password</label><br>
-                                <input type="password" id="password" name="password">
-                                <div class="match">
-                                    *Passwords do not match
+                                <div class="create">
+                                    <div class="butts"><input type="submit" value="Create Account!"></div>
                                 </div>
-                            </td>
-                            <td>
-                                <label for="password">Confirm Password</label><br>
-                                <input type="password" id="password" name="password">
                             </td>
                         </tr>
                     </form>
                 </table>
             </div>
             <br>
-            <div class="create">
-                <div class="butts"><input type="submit" value="Create Account!"></div>
-                <br>
+            <div class="login">
                 Already have an account? <a href="index.html">Log in!</a>
             </div>
         </div>
