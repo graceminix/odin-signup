@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
     <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="page">
-        <div id="left-side">
+        <div class="left-side">
             <div class="logo">
                 <img src="logo.png">
                 ODIN
             </div>
             <footer>Photo by <a href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie West</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>            </footer>
         </div>
-        <div id="right-side">
+        <div class="right-side">
             <div class="text"><p>
                 This is not a real online service!
                 You know you need something <br>like this in your life to
@@ -27,64 +28,33 @@
                 </p>
             </div>
             <!-- Form information -->
-            <div id="form">
-                <table>
+            <div class="form">
                     <form autocomplete="off" action="#">
                         <div class="actual">
-                            <tr>
-                                <th>
-                                    <caption><b>Let's do this!</b></caption><br>
-                                </th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="fname">First Name</label><br>
-                                    <input type="text" id="fname" name="firstname" required><br>
-                                </td>
-                                <td>
-                            
-                                    <label for="lname">Last Name</label><br>
-                                    <input type="text" id="lname" name="lastname" required><br>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="email">Email Address</label><br>
-                                    <input type="email" id="email" name="email"
-                                    placeholder="example@example.com" required><br>
-                                </td>
-                                <td>
-                            
-                                    <label for="phone">Phone Number</label><br>
-                                    <input type="tel" id="phone" name="phone"
-                                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                                    placeholder="123-456-7890" required><br>
-                                </td>
-                            </tr>
-                            <tr>
-                            
-                                <td>
-                                    <label for="password">Password</label><br>
-                                    <input type="password" id="password" name="password" required>
-                                    <div class="error">
-                                        *Passwords do not match
-                                    </div>
-                                </td>
-                                <td>
-                                    <label for="password2">Confirm Password</label><br>
-                                    <input type="password" id="password2" name="password2" required>
-                                </td>
-                            </tr>
+                            <caption><b>Let's do this!</b></caption><br>
+                            <label for="fname">First Name</label><br>
+                            <input type="text" id="fname" name="firstname" required><br>
+                    
+                            <label for="lname">Last Name</label><br>
+                            <input type="text" id="lname" name="lastname" required><br>
+                            <label for="email">Email Address</label><br>
+                            <input type="email" id="email" name="email"
+                            placeholder="example@example.com" required><br>
+                    
+                            <label for="phone">Phone Number</label><br>
+                            <input type="tel" id="phone" name="phone"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            placeholder="123-456-7890" required><br>
+                    
+                            <label for="password">Password</label><br>
+                            <input type="password" id="password" name="password" required><br>
+                            <label for="password2">Confirm Password</label><br>
+                            <input type="password" id="password2" name="password2" required><br>
                         </div>
-                        <tr>
-                            <td>
-                                <div class="create">
-                                    <div class="butts"><input type="submit" value="Create Account!"></div>
-                                </div>
-                            </td>
-                        </tr>
+                        <div class="create">
+                            <div class="butts"><input type="submit" value="Create Account!"></div>
+                        </div>
                     </form>
-                </table>
             </div>
             <br>
             <div class="login">
