@@ -120,6 +120,9 @@ body {
     background-color: black;
 }
 
+.actual input {
+    width: 80%;
+}
 input[type=submit]:hover {
     background: grey;
 }
@@ -139,12 +142,10 @@ input[type=submit]:hover {
 
 .child {
     font-size: smaller;
-    flex-basis: 40%;
-    width: 50%;
+    flex-basis: 33%;
 }
 
 .error {
-    border: red;
     outline: 2px solid red;
 }
 
